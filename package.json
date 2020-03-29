@@ -24,6 +24,7 @@
   "scripts": {
     "prebuild": "yarn clean",
     "build": "babel lib -x .mjs --out-dir lib",
+    "prepare": "npm run build",
     "clean": "rimraf lib/**/*.js",
     "test": "mocha test.spec.js --require intelli-espower-loader"
   },
